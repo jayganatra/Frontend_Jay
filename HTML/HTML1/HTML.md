@@ -177,11 +177,9 @@ ans-HTML (Hypertext Markup Language) and XHTML (Extensible Hypertext Markup Lang
 ans-
 logical
 <header>, <nav>, <main>, <article>, <section>, <aside>, <footer>, <h1> to <h6>, <p>, <ul>, <ol>, <li>, <table>, <form>, etc.
-
+	
 physical
  <font>, <b>, <i>, <u>, <strike>, <center>, <big>, <small>, <br>, <hr>, etc.
-
-
 ---
 
 
