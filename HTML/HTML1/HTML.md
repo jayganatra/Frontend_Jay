@@ -1,72 +1,56 @@
 ## 1.Are the HTML tags and elements the same thing?
 
-ANS-P,A,BR,HERF,IMG,I,U,B ETC.
+ANS-HTML Tags are building blocks of HTML Page. HTML Elements are components that are used in HTML Page.They consist of an opening tag (<tag>) and, optionally, a closing tag (</tag>).Examples of HTML tags include <p>, <div>, <a>, <img>, <table>, <ul>, <li>, etc.
+
+-->Elements are the combination of opening tags, content, and closing tags that define a particular structure or component on a webpage.Examples of HTML elements include paragraphs (<p>), headings (<h1>, <h2>, etc.), links (<a>), images (<img>), tables (<table>), lists (<ul>, <ol>, <li>), etc.
 
 ------------------------------------------------------------------------
 
 ## 2 What are tags and attributes in HTML?
 
-ANS-attribute is additional information about your tag .tag hold the
-HTML element.
+ANS-In HTML, tags and attributes play essential roles in defining the structure, content, and behavior of web pages.tag define the beginning and end of HTML elements.Attributes provide additional information about HTML elements.
+Tag Example: <p> is the opening tag for a paragraph element, and </p> is its closing tag.
+attributes Example: In the <img> tag <img src="image.jpg" alt="Description">
 
 ------------------------------------------------------------------------
 
 ## 3 What are void elements in HTML? With Example.
 
-ans-void elements are elements that do not have a closing
-tag.ex-img,br,input etc
-ex-`<img src="example.jpg" alt="Example Image">`{=html}
+ans-void elements are elements that do not have a closing.A void element is an element in HTML that cannot have any child nodes.Void elements only have a start tag; end tags must not be specified for void elements.
+tag.ex-img,br,input,p,link,etc
+ex-`<img src="example.jpg" alt="Example Image">`
 
 ------------------------------------------------------------------------
 
 ## 4.What are HTML Entities? With Example.
 
-ans-html Entities used to display reserved characters.ex -
-```{=html}
-<p>
-```
-,`<i>`{=html} ex-
-```{=html}
-<p>
-```
-This is an example of using HTML entities
-```{=html}
-</p>
-```
-
+ans-html Entities used to display reserved characters.HTML entities are special codes used to represent reserved characters in HTML documents. 
+ex -<,>,&,€	
 ------------------------------------------------------------------------
 
 ## 5. What is the 'class' attribute in HTML? With Example.
 
-ans-class attribute is used to assign one or more class names to an
-element.
+ans-class attribute is used to assign one or more class names to an element.Classes are used to apply styles or behaviors to multiple elements on a page.Classes are used to apply styles or behaviors to multiple elements on a page.
 
--Classes are used to apply styles or behaviors to multiple elements on a
-page
+ex-<p>This is a <span class="highlight">highlighted</span> text.</p>
 
-ex-
-```{=html}
-<p>
-```
-This is a [highlighted]{.highlight} text.
-```{=html}
-</p>
-```
 
 ------------------------------------------------------------------------
 
 ## 6.What is the difference between the 'id' attribute and the 'class' attribute of HTML elements? With Example.
 
-ANS-The id attribute and the class attribute are both used in HTML
-elements to provide additional information about the element,but they
-serve different purposes.
+ANS-id Attribute:
+The 'id' attribute is used to uniquely identify an HTML element within the document.
+Each 'id' attribute value must be unique within the HTML document.
+It is often used to target specific elements for styling or scripting purposes.
+Example: <div id="header">...</div>
 
-
-    <div id="header">
-        <h1>Welcome to our Website</h1>
-    <div class="s">
-        <p class="s">This is an important message.</p></div>
-        
+class' Attribute:
+The 'class' attribute is used to assign one or more class names to an HTML element.
+Classes allow you to apply styles or behaviors to multiple elements on a page.
+Multiple elements can share the same class, and an element can have multiple classes separated by spaces.
+It is often used when you want to apply the same styles or behavior to multiple elements.
+Example: <div class="section">...</div>
 
 ------------------------------------------------------------------------
 
@@ -78,40 +62,40 @@ ans-they are formating tag bold,italic,underline,subscript,strike etc.
 
 ## 8 How is Cell Padding different from Cell Spacing? With Example.
 
-ANS-space between the content of a cell and the cell's border
-
-
-    EX-<style>
-        table {
-            padding: 10px;
-        }
-    </style>
-    <table>
-        <tr>
-            <td>This is a cell with padding</td>
-        </tr>
-    </table>
-
+ANS-Cell padding is used to create a border around the content area of a web page, where as cell spacing is used for positioning elements within that content area.
+```
+<table style="padding: 10px;">
+    <tr>
+        <td>This is a cell with padding</td>
+    </tr>
+</table>
+```
+```
+<table style="border-spacing: 10px;">
+    <tr>
+        <td>Cell 1</td>
+        <td>Cell 2</td>
+    </tr>
+</table>
+```
 ## 9. How can we club two or more rows or columns into a single row or column in an HTML table? With Example.
 
-ANS-you can merge multiple rows or columns into a single row or column
-using the rowspan and colspan .
+ANS-In HTML tables, you can merge multiple rows or columns into a single row or column using the rowspan and colspan attributes.
+    These attributes allow you to span a cell across multiple rows or columns, effectively combining them into a single unit.
 
+```
+<table border="1">
+    <tr>
+        <td rowspan="2">Header 1</td>
+        <td colspan="2">Header 2 and 3</td>
+        <td>Header 4</td>
+    </tr>
+    <tr>
+        <td>Header 5</td>
+        <td>Header 6</td>
+        <td>Header 7</td>
+```
 
-    EX-<table border="1">
-        <tr>
-            <td rowspan="2">Row 1, Column 1</td>
-            <td>Row 1, Column 2</td>
-        </tr>
-        <tr>
-            <!-- This cell will be merged with the cell above -->
-            <td>Row 2, Column 2</td>
-        </tr>
-        <tr>
-            <td>Row 3, Column 1</td>
-            <td>Row 3, Column 2</td>
-        </tr>
-    </table>
 
 ------------------------------------------------------------------------
 
