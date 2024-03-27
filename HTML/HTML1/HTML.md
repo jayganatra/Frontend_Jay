@@ -1,6 +1,5 @@
 ## 1.Are the HTML tags and elements the same thing?
-ANS-HTML Tags are building blocks of HTML Page. HTML Elements are components that are used in HTML Page.They consist of an opening tag (<tag>) and, optionally, a closing tag (</tag>).Examples of HTML tags include <p>, <div>, <a>, <img>, <table>, <ul>, <li>, etc.
-Elements are the combination of opening tags, content, and closing tags that define a particular structure or component on a webpage.Examples of HTML elements include paragraphs (<p>), headings (<h1>, <h2>, etc.), links (<a>), images (<img>), tables (<table>), lists (<ul>, <ol>, <li>), etc.
+ANS-HTML Tags are building blocks of HTML Page. HTML Elements are components that are used in HTML Page.They consist of an opening tag (<tag>) and, optionally, a closing tag (</tag>).Examples of HTML tags include <p>, <div>, <a>, <img>, <table>, <ul>, <li>, etc.Elements are the combination of opening tags, content, and closing tags that define a particular structure or component on a webpage.Examples of HTML elements include paragraphs (<p>), headings (<h1>, <h2>, etc.), links (<a>), images (<img>), tables (<table>), lists (<ul>, <ol>, <li>), etc.
 
 -----
 ## 2 What are tags and attributes in HTML?
