@@ -1,44 +1,33 @@
-## 1.Are the HTML tags and elements the same thing?
-
+## 1\.Are the HTML tags and elements the same thing?
 ANS-HTML Tags are building blocks of HTML Page. HTML Elements are components that are used in HTML Page.They consist of an opening tag (<tag>) and, optionally, a closing tag (</tag>).Examples of HTML tags include <p>, <div>, <a>, <img>, <table>, <ul>, <li>, etc.
 
--->Elements are the combination of opening tags, content, and closing tags that define a particular structure or component on a webpage.Examples of HTML elements include paragraphs (<p>), headings (<h1>, <h2>, etc.), links (<a>), images (<img>), tables (<table>), lists (<ul>, <ol>, <li>), etc.
+Elements are the combination of opening tags, content, and closing tags that define a particular structure or component on a webpage.Examples of HTML elements include paragraphs (<p>), headings (<h1>, <h2>, etc.), links (<a>), images (<img>), tables (<table>), lists (<ul>, <ol>, <li>), etc.
 
-------------------------------------------------------------------------
-
+-----
 ## 2 What are tags and attributes in HTML?
-
 ANS-In HTML, tags and attributes play essential roles in defining the structure, content, and behavior of web pages.tag define the beginning and end of HTML elements.Attributes provide additional information about HTML elements.
+
 Tag Example: <p> is the opening tag for a paragraph element, and </p> is its closing tag.
 attributes Example: In the <img> tag <img src="image.jpg" alt="Description">
 
-------------------------------------------------------------------------
-
+-----
 ## 3 What are void elements in HTML? With Example.
-
 ans-void elements are elements that do not have a closing.A void element is an element in HTML that cannot have any child nodes.Void elements only have a start tag; end tags must not be specified for void elements.
 tag.ex-img,br,input,p,link,etc
 ex-`<img src="example.jpg" alt="Example Image">`
 
-------------------------------------------------------------------------
-
-## 4.What are HTML Entities? With Example.
-
-ans-html Entities used to display reserved characters.HTML entities are special codes used to represent reserved characters in HTML documents. 
-ex -<,>,&,€	
-------------------------------------------------------------------------
-
-## 5. What is the 'class' attribute in HTML? With Example.
-
+-----
+## 4\.What are HTML Entities? With Example.
+ans-html Entities used to display reserved characters.HTML entities are special codes used to represent reserved characters in HTML documents.
+ex -<,>,&,€
+----------------------------------------------------------------------------------------------------------------------------------------------
+## 5\. What is the 'class' attribute in HTML? With Example.
 ans-class attribute is used to assign one or more class names to an element.Classes are used to apply styles or behaviors to multiple elements on a page.Classes are used to apply styles or behaviors to multiple elements on a page.
 
 ex-<p>This is a <span class="highlight">highlighted</span> text.</p>
 
-
-------------------------------------------------------------------------
-
-## 6.What is the difference between the 'id' attribute and the 'class' attribute of HTML elements? With Example.
-
+-----
+## 6\.What is the difference between the 'id' attribute and the 'class' attribute of HTML elements? With Example.
 ANS-id Attribute:
 The 'id' attribute is used to uniquely identify an HTML element within the document.
 Each 'id' attribute value must be unique within the HTML document.
@@ -52,38 +41,32 @@ Multiple elements can share the same class, and an element can have multiple cla
 It is often used when you want to apply the same styles or behavior to multiple elements.
 Example: <div class="section">...</div>
 
-------------------------------------------------------------------------
-
-## 7.What are the various formatting tags in HTML?
-
+-----
+## 7\.What are the various formatting tags in HTML?
 ans-they are formating tag bold,italic,underline,subscript,strike etc.
 
-------------------------------------------------------------------------
-
+-----
 ## 8 How is Cell Padding different from Cell Spacing? With Example.
-
 ANS-Cell padding is used to create a border around the content area of a web page, where as cell spacing is used for positioning elements within that content area.
-```
+~~~
 <table style="padding: 10px;">
     <tr>
         <td>This is a cell with padding</td>
     </tr>
 </table>
-```
-```
+~~~
+~~~
 <table style="border-spacing: 10px;">
     <tr>
         <td>Cell 1</td>
         <td>Cell 2</td>
     </tr>
 </table>
-```
-## 9. How can we club two or more rows or columns into a single row or column in an HTML table? With Example.
-
+~~~
+## 9\. How can we club two or more rows or columns into a single row or column in an HTML table? With Example.
 ANS-In HTML tables, you can merge multiple rows or columns into a single row or column using the rowspan and colspan attributes.
-    These attributes allow you to span a cell across multiple rows or columns, effectively combining them into a single unit.
-
-```
+These attributes allow you to span a cell across multiple rows or columns, effectively combining them into a single unit.
+~~~
 <table border="1">
     <tr>
         <td rowspan="2">Header 1</td>
@@ -94,59 +77,48 @@ ANS-In HTML tables, you can merge multiple rows or columns into a single row or 
         <td>Header 5</td>
         <td>Header 6</td>
         <td>Header 7</td>
-```
+~~~
 
-
-------------------------------------------------------------------------
-
-## 10. What is the difference between a block-level element and an inline element?
-
+-----
+## 10\. What is the difference between a block-level element and an inline element?
 ANS- Block level element areHTML elements that start on a new line and
 typically the full width available to them. ex-
 
     ex-table,form,div,p etc
      Inline elements do not start on a new line and only take up as much width as necessary.
-
-------------------------------------------------------------------------
-
-## 11. How to create a Hyperlink in HTML? With Example.
-
+-----
+## 11\. How to create a Hyperlink in HTML? With Example.
 ans- hyperlink using the `<a>`{=html} (anchor) element.
 
 ex-`<a href="https://www.example.com">`{=html}Visit Example
 Website`</a>`{=html}
 
-------------------------------------------------------------------------
-
+-----
 \## 12. What is the use of an iframe tag? With Example.
 
 ans-`<iframe>`{=html} tag in HTML is used to embed another HTML
 document.
 
 ex-\
-`<iframe width="560" height="315" src="https://www.youtube.com/embed/h45UL-dRZz8?si=vscHSJ7LrbgUi2rw" 
-    title="YouTube video player" frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>`{=html}
+`<iframe width="560" height="315" src="https://www.youtube.com/embed/h45UL-dRZz8?si=vscHSJ7LrbgUi2rw"  title="YouTube video player" frameborder="0"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>`{=html}
 `</iframe>`{=html}
 
-------------------------------------------------------------------------
-
-## 13.What is the use of a span tag? Explain with example?
-
+-----
+## 13\.What is the use of a span tag? Explain with example?
 ans-The `<span>`{=html} tag in HTML is an inline element used to group
 and apply styles to inline elements.
 
 ex-
-```{=html}
+~~~ {=html}
 <p>
-```
+~~~
+
 This is a [highlighted]{.ex} text.
-```{=html}
+~~~ {=html}
 </p>
-```
+~~~
 
-------------------------------------------------------------------------
-
+-----
 \## 14.How to insert a picture into a background image of a web page?
 With Example.
 
@@ -154,107 +126,115 @@ ans-embed the images directly into the HTML.
 
 ex- `<img src="logo.png">`{=html}
 
-------------------------------------------------------------------------
-
+-----
 \## 15. How are active links different from normal links?
 
 ans-active links and normal links refer to different states of
 hyperlinks based on user interaction.
 
-------------------------------------------------------------------------
-
-## 14.What are the different tags to separate sections of text?
-
+-----
+## 14\.What are the different tags to separate sections of text?
 ans- you can use to structure of your
 content.div,p,h1,section,artical,heder,nav etc.
 
-------------------------------------------------------------------------
-
-## 15.What is SVG?
-
+-----
+## 15\.What is SVG?
 ans-SVG stands for Scalable Vector Graphics.it used to describe
 two-dimensional vector graphics.
 
-------------------------------------------------------------------------
-
-## 16. What is difference between HTML and XHTML?
-
+-----
+## 16\. What is difference between HTML and XHTML?
 ans-HTML (Hypertext Markup Language) and XHTML (Extensible Hypertext
 Markup Language) are both markup languages used to create web pages.
 
-------------------------------------------------------------------------
-
-## 17. What are logical and physical tags in HTML?
-
+-----
+## 17\. What are logical and physical tags in HTML?
 ans-logical
-```{=html}
+~~~ {=html}
 <header>
-```
+~~~
+
 ,
-```{=html}
+~~~ {=html}
 <nav>
-```
+~~~
+
 ,
-```{=html}
+~~~ {=html}
 <main>
-```
+~~~
+
 ,
-```{=html}
+~~~ {=html}
 <article>
-```
+~~~
+
 ,
-```{=html}
+~~~ {=html}
 <section>
-```
+~~~
+
 ,
-```{=html}
+~~~ {=html}
 <aside>
-```
+~~~
+
 ,
-```{=html}
+~~~ {=html}
 <footer>
-```
+~~~
+
 ,
-```{=html}
+~~~ {=html}
 <h1>
-```
+~~~
+
 to
-```{=html}
+~~~ {=html}
 <h6>
-```
+~~~
+
 ,
-```{=html}
+~~~ {=html}
 <p>
-```
+~~~
+
 ,
-```{=html}
+~~~ {=html}
 <ul>
-```
+~~~
+
 ,
-```{=html}
+~~~ {=html}
 <ol>
-```
+~~~
+
 ,
-```{=html}
+~~~ {=html}
 <li>
-```
+~~~
+
 ,
-```{=html}
+~~~ {=html}
 <table>
-```
+~~~
+
 ,
-```{=html}
+~~~ {=html}
 <form>
-```
+~~~
+
 , etc.
 
 physical `<font>`{=html}, `<b>`{=html}, `<i>`{=html}, `<u>`{=html},
 `<strike>`{=html},
-```{=html}
+~~~ {=html}
 <center>
-```
+~~~
+
 , `<big>`{=html}, `<small>`{=html}, `<br>`{=html},
-```{=html}
+~~~ {=html}
 <hr>
-```
+~~~
+
 , etc.
