@@ -17,9 +17,11 @@ tag.ex-img,br,input,p,link,etc
 ex-`<img src="example.jpg" alt="Example Image">`
 
 -----
-## 4\.What are HTML Entities? With Example.
+## 4.What are HTML Entities? With Example.
 ans-html Entities used to display reserved characters.HTML entities are special codes used to represent reserved characters in HTML documents.
+
 ex -<,>,&,€
+
 ----------------------------------------------------------------------------------------------------------------------------------------------
 ## 5\. What is the 'class' attribute in HTML? With Example.
 ans-class attribute is used to assign one or more class names to an element.Classes are used to apply styles or behaviors to multiple elements on a page.Classes are used to apply styles or behaviors to multiple elements on a page.
