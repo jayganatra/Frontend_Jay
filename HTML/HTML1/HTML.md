@@ -9,7 +9,7 @@ Examples of HTML elements include paragraphs (<p>), headings (<h1>, <h2>, etc.),
 
 -----
 ## 2 What are tags and attributes in HTML?
-ANS-In HTML, tags and attributes play essential roles in defining the structure, content, and behavior of web pages.tag define the beginning and end of HTML elements.Attributes provide additional information about HTML elements.
+ANS-In HTML, tags and attributes play essential roles in defining the structure, content, and behavior of web pages.tag define the beginning and end of HTML elements.Attributes provide additional information about HTML elements.While the elements tell the browser what to display, the attributes define how they will behave. The tags mark the beginning and the end of an element. They may not be necessary for some elements, especially the closing tags. Equally important, the attributes are only within the opening tags.
 
 Tag Example: <p> is the opening tag for a paragraph element, and </p> is its closing tag.
 attributes Example: In the <img> tag <img src="image.jpg" alt="Description">
