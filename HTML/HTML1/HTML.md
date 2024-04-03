@@ -29,9 +29,44 @@ ex - &copy;
      &para;	
 ----------------------------------------------------------------------------------------------------------------------------------------------
 ## 5\. What is the 'class' attribute in HTML? With Example.
-ans-class attribute is used to assign one or more class names to an element.Classes are used to apply styles or behaviors to multiple elements on a page.Classes are used to apply styles or behaviors to multiple elements on a page.
+ans-The class attribute specifies one or more class names for an element. The class attribute is mostly used to point to a class in a style sheet. However, it can also be used by a JavaScript (via the HTML DOM) to make changes to HTML elements with a specified class.
 
-ex-<p>This is a <span class="highlight">highlighted</span> text.</p>
+ex-```
+     <!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #header {
+            background-color: #f0f0f0;
+            padding: 10px;
+        }
+
+        .section {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="header">
+    <h1>Welcome to our Website</h1>
+</div>
+
+<div class="section">
+    <h2>Section 1</h2>
+    <p>This is the content of section 1.</p>
+</div>
+
+<div class="section">
+    <h2>Section 2</h2>
+    <p>This is the content of section 2.</p>
+</div>
+
+</body>
+</html>
+```
 
 -----
 ## 6\.What is the difference between the 'id' attribute and the 'class' attribute of HTML elements? With Example.
