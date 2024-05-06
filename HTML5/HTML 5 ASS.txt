@@ -1,0 +1,59 @@
+1) What are the new tags added in HTML5?
+ans-1)<article>:Represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable.
+	2)<aside>:Represents content that is tangentially related to the content around it.
+	3)<audio>: Embeds sound content on a webpage.
+	4)<footer>: Represents a footer for its nearest ancestor sectioning content or sectioning root element.
+	5)<header>: Represents introductory content, typically containing navigation links, headings, logos, etc.
+	6)<details>:Represents a disclosure widget from which the user can obtain additional information or controls.
+	7)<nav>: Defines a section of navigation links.
+	8)<section>: Represents a generic section of a document or application.
+	9)<main>: Specifies the main content of a document.
+	10)rogress>: Represents the progress of a task, typically displayed as a progress bar.
+	11)<meter>: Represents a scalar measurement within a known range, or a fractional value.
+------------------------------------------------------------------------------------------------------
+2)How to embed audio and video in a webpage?
+ans-audio:-
+<audio controls>
+	  <source src="audio-file.mp3" type="audio/mpeg">
+	  Your browser does not support the audio element.
+</audio>
+-----------------------
+video:-
+<video controls width="480" height="270">
+  <source src="video-file.mp4" type="video/mp4">
+  Your browser does not support the video element.
+</video>
+---------------------------------------------------------------------------------------------------------
+3)Semantic element in HTML5?
+ans-1)<article>:Represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable.
+	2)<aside>:Represents content that is tangentially related to the content around it.
+	3)<audio>: Embeds sound content on a webpage.
+	4)<footer>: Represents a footer for its nearest ancestor sectioning content or sectioning root element.
+	5)<header>: Represents introductory content, typically containing navigation links, headings, logos, etc.
+	6)<details>:Represents a disclosure widget from which the user can obtain additional information or controls.
+	7)<nav>: Defines a section of navigation links.
+	8)<section>: Represents a generic section of a document or application.
+	9)<main>: Specifies the main content of a document.
+	10)rogress>: Represents the progress of a task, typically displayed as a progress bar.
+	11)<meter>: Represents a scalar measurement within a known range, or a fractional value.
+
+----------------------------------------------------------------------------------------------------------
+4)Canvas and SVG tags
+ans-Canvas-The <canvas> element provides a drawing surface through JavaScript. 
+		  -It allows you to draw graphics, animations, charts, or other visual images dynamically. 
+		  -The content of the <canvas> is rendered programmatically using JavaScript.
+		  
+	ex-<canvas id="myCanvas" width="200" height="100"></canvas>
+		    <script>
+			var c = document.getElementById('newCanvas');
+			</script>
+	--------------------
+svg-SVG stands for Scalable Vector Graphics.The <svg> element is a markup language for describing two-dimensional vector graphics.
+   -Unlike <canvas>, SVG content is XML-based and can be manipulated directly using CSS and JavaScript. 
+   -SVG graphics are resolution-independent, meaning they look sharp at any resolution.
+
+		ex-<svg width="200" height="100">
+		  <rect x="10" y="10" width="50" height="50" fill="red"/>
+		</svg>
+
+		
