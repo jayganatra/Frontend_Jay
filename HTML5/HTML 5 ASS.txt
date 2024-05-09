@@ -12,31 +12,37 @@ ans-1)<article>:Represents a self-contained composition in a document, page, app
 	11)<meter>: Represents a scalar measurement within a known range, or a fractional value.
 ------------------------------------------------------------------------------------------------------
 2)How to embed audio and video in a webpage?
-ans-audio:-
-<audio controls>
+ans-The controls attribute adds playback controls like play, pause, and volume slider.
+-<source> elements specify the audio/video file and its type.
+-Prepare your audio/video files: Make sure you have the audio and video files ready in compatible formats like MP3, OGG, WAV for audio, and MP4, WebM, OGG for video.
+-HTML allows us to create standards-based video and audio players that don't require the use of any plugins
+-----------------------
+audio:-
+The <audio> element is used to embed audio content in a webpage.
+It supports various audio formats such as MP3, OGG, and WAV.
+Developers can specify multiple <source> elements within the <audio> element to provide different audio formats, ensuring compatibility across different browsers.
+ex-<audio controls>
 	  <source src="audio-file.mp3" type="audio/mpeg">
 	  Your browser does not support the audio element.
 </audio>
 -----------------------
 video:-
-<video controls width="480" height="270">
+The <video> element is used to embed video content in a webpage.
+Similar to <audio>, it supports multiple video formats such as MP4, WebM, and OGG.
+Developers can specify multiple <source> elements within the <video> element to provide different video formats, ensuring compatibility across different browsers.
+ex-<video controls width="480" height="270">
   <source src="video-file.mp4" type="video/mp4">
   Your browser does not support the video element.
 </video>
 ---------------------------------------------------------------------------------------------------------
 3)Semantic element in HTML5?
-ans-1)<article>:Represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable.
-	2)<aside>:Represents content that is tangentially related to the content around it.
-	3)<audio>: Embeds sound content on a webpage.
-	4)<footer>: Represents a footer for its nearest ancestor sectioning content or sectioning root element.
-	5)<header>: Represents introductory content, typically containing navigation links, headings, logos, etc.
-	6)<details>:Represents a disclosure widget from which the user can obtain additional information or controls.
-	7)<nav>: Defines a section of navigation links.
-	8)<section>: Represents a generic section of a document or application.
-	9)<main>: Specifies the main content of a document.
-	10)rogress>: Represents the progress of a task, typically displayed as a progress bar.
-	11)<meter>: Represents a scalar measurement within a known range, or a fractional value.
-
+ans-Semantic Element is used to described meaning of element to browser and developers.
+   - Example of Semantic element : form, table, section, header, footer etc., it will defines its content.
+   - Sematic Elment is also help to browser to understand what kind of data contains in the elements.
+ex=>
+<header>: Represents introductory content or a group of navigational links at the top of a webpage. It typically includes logos, headings, and navigation menus.
+<nav>: Defines a section of navigation links that direct users to other parts of the website or external pages. It's often used for menus, sidebars, or navigation bars.
+<main>: Specifies the primary content of a webpage, excluding headers, footers, and navigation elements. It typically contains the core information or main focus of the page
 ----------------------------------------------------------------------------------------------------------
 4)Canvas and SVG tags
 ans-Canvas-The <canvas> element provides a drawing surface through JavaScript. 
