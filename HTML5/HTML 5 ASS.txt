@@ -46,8 +46,9 @@ ex=>
 ----------------------------------------------------------------------------------------------------------
 4)Canvas and SVG tags
 ans-Canvas-The <canvas> element provides a drawing surface through JavaScript. 
-		  -It allows you to draw graphics, animations, charts, or other visual images dynamically. 
-		  -The content of the <canvas> is rendered programmatically using JavaScript.
+ -It allows you to draw graphics, animations, charts, or other visual images dynamically. 
+ -The content of the <canvas> is rendered programmatically using JavaScript.
+
 		  
 	ex-<canvas id="myCanvas" width="200" height="100"></canvas>
 		    <script>
