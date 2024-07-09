@@ -1,0 +1,118 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Mainbgcolor {
+    height: 100%;
+    width: 650px;
+}
+
+.service {
+    height: 650px;
+    width: auto;
+    background-color: black;
+    flex-direction: column;
+    display: flex;
+    text-align: end;
+    padding: 100px 60px 0px 0px;
+    position: relative;
+}
+
+.webdesign {
+    margin-top: 20px;
+    color: red;
+}
+
+.printdesign {
+    margin-top: 30px;
+}
+
+.photography {
+    margin-top: 30px;
+}
+
+.name {
+    margin-bottom: 30px;
+    color: white;
+    font-size: 2rem;
+}
+
+.webdesign {
+    margin-bottom: 10px;
+    color: red;
+}
+
+.printdesign {
+    margin-bottom: 10px;
+    color: red;
+}
+
+.photography {
+    margin-bottom: 10px;
+    color: red;
+}
+
+.computericon {
+    position: absolute;
+    left: 625px;
+    top: 220px;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    color: red;
+    padding: 12px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 1;
+
+}
+
+.printicon {
+    position: absolute;
+    left: 625px;
+    top: 340px;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    color: red;
+    padding: 12px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 1;
+
+}
+
+.camera {
+    position: absolute;
+    left: 625px;
+    top: 450px;
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    padding: 12px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 1;
+
+}
+
+p {
+    color: rgb(12, 250, 131);
+}
+
+.image {
+    height: 650px;
+    width: 660px;
+    position: absolute;
+    left: 650px;
+    bottom: 0px;
+    background-size: cover;
+    background-position: center;
+    
+}
