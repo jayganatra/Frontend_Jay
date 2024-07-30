@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Image Slider</title>
+  <style>
+    .slider {
+      width: 600px;
+      overflow: hidden;
+      position: relative;
+    }
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slides img {
+        
+        display: flex;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 2/1;
+    }
+
+
+    .nav-buttons {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+
+    .nav-buttons button {
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<div class="slider">
+  <div class="slides">
+    <img src="https://images.pexels.com/photos/163489/war-desert-guns-gunshow-163489.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Slide 1">
+    <img src="https://images.pexels.com/photos/2526128/pexels-photo-2526128.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Slide 2">
+    <img src="https://images.pexels.com/photos/4427658/pexels-photo-4427658.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Slide 3">
+  </div>
+  <div class="nav-buttons">
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    let currentIndex = 0;
+    const slides = $('.slides');
+    const slideCount = $('.slides img').length;
+    const slideWidth = $('.slides img').width();
+
+    function showSlide(index) {
+      slides.css('transform', 'translateX(' + (-index * slideWidth) + 'px)');
+    }
+
+    $('#next').click(function() {
+      currentIndex = (currentIndex + 1) % slideCount;
+      showSlide(currentIndex);
+    });
+
+    $('#prev').click(function() {
+      currentIndex = (currentIndex - 1 + slideCount) % slideCount;
+      showSlide(currentIndex);
+    });
+  });
+</script>
+
+</body>
+</html>
+
+    
+</body>
+</html>

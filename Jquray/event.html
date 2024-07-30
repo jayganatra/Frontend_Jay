@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Bubbling Example</title>
+  <style>
+    .container{
+      padding: 20px;
+      border: 2px solid black;
+    }
+    .container parent {
+      padding: 20px;
+      border: 2px solid blue;
+    }
+    .container child {
+      padding: 20px;
+      border: 2px solid red;
+      background-color: lightgrey;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        Grand-Parents
+        <div class="container parent">
+            Parents
+            <div class="container child">
+                child
+            </div>
+        </div>
+    </div>
+
+<script>
+    $('.grandparent').click(() => {
+        alert("Grand Parents Clicked")
+    })
+    $('.parent').click((e) => {
+        alert("Parents Clicked")
+        e.stopPropagation()
+
+    })
+    $('.child').click((e) => {
+        alert("Child Clicked")
+        e.stopPropagation()
+    })
+</script>
+
+</body>
+</html>

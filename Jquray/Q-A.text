@@ -1,0 +1,60 @@
+Q-1 What is jQuery?
+Ans-jQuery is a fast, small, and feature-rich JavaScript library. 
+    The main purpose of jQuery is to provide an easy way to use JavaScript on your website to make it more interactive and attractive.
+< ---------------------------------------------------------------------------------------------------------------------->
+ Q-2 How to Apply CSS Using JQuery, How to Add Class and Remove Class in Jquery, JQuery Animation?
+ Ans-
+ ==>Apply CSS Using jQuery:-
+                        <body>
+                            <div class="box">hello</div>
+                        </body>
+
+                        <sctipt>
+                        let box = $(".box").css("background", "red")
+                        </script>
+-----------------------------------
+==>Add and Remove Classes Using jQuery:-
+                        <body>
+                            <div class="box">hello</div>
+                        </body>
+                        <sctipt>
+                        let box = $(".box").addClass("card")
+                        </script>
+                        removeClass:-
+                        <body>
+                        <div class="box card">hello</div>
+                        </body>
+                        <sctipt>
+                        let box = $(".box").removeClass("card")
+                        </script>
+-----------------------------------
+==>jQuery Animation:-
+                <style>
+                        * {
+                            margin: 0;
+                            padding: 0;
+                            box-sizing: border-box;
+                        }
+
+                        .box {
+                            background-color: rgb(61, 63, 180);
+                            width: 200px;
+                            height: 200px;
+                        }
+                </style>
+
+                <div class="box"></div>
+
+                    <script>
+                        let box = $(".box");
+                        box.hover(() => {
+                            box.animate({
+                                width: '100vw',
+                                height: "100vh",
+                                opacity: "0.5",
+                            })
+                        })
+                    </script>
+                </script>
+<------------------------------------------------------------------------------------------------------------------------->
+
