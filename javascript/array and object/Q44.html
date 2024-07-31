@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "jay ganatra";
+
+        let strArr = str.split('');
+
+        let firstLetter = strArr[0];
+
+        let firstLetterUpper = firstLetter.toUpperCase();
+
+        strArr.splice(0, 1, firstLetterUpper);
+
+        let final = strArr.join('');
+        console.log(final);
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Form Validation</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form id="registrationForm">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <span id="emailError" class="error"></span><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone">
+        <span id="phoneError" class="error"></span><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <span id="passwordError" class="error"></span><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+
+        function validateEmail() {
+            var email = document.getElementById('email').value;
+            var emailError = document.getElementById('emailError');
+            var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            if (!emailPattern.test(email)) {
+                emailError.textContent = 'Please enter a valid email address.';
+            } else {
+                emailError.textContent = '';
+            }
+        }
+        function validatePhone() {  
+            var phone = document.getElementById('phone').value;
+            var phoneError = document.getElementById('phoneError');
+            var phonePattern = /^\d{10}$/; 
+            
+            if (!phonePattern.test(phone)) {
+                phoneError.textContent = 'Please enter a valid phone number (10 digits).';
+            } else {
+                phoneError.textContent = '';
+            }
+        }
+        function validatePassword() {
+            var password = document.getElementById('password').value;
+            var passwordError = document.getElementById('passwordError');
+            
+            if (password.length < 6) {
+                passwordError.textContent = 'Password must be at least 6 characters long.';
+            } else {
+                passwordError.textContent = '';
+            }
+        }
+        document.getElementById('email').addEventListener('input', validateEmail);
+        document.getElementById('phone').addEventListener('input', validatePhone);
+        document.getElementById('password').addEventListener('input', validatePassword);
+        function validateForm(event) {
+            event.preventDefault(); 
+            
+            validateEmail();
+            validatePhone();
+            validatePassword();
+            var hasErrors = document.querySelectorAll('.error').some(el => el.textContent !== '');
+            
+            if (!hasErrors) {
+                alert('Form submitted successfully!');
+            }
+        }
+        document.getElementById('registrationForm').addEventListener('submit', validateForm);
+
+    </script>
+</body>
+</html>

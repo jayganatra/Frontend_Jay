@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Two objects to compare
+var obj1 = {
+    name: "jay",
+    age: 21,
+    city: "Singapur"
+};
+
+var obj2 = {
+    name: "virat",
+    age: 25,
+    city: "UK"
+};
+var areEqual = true;
+if (Object.keys(obj1).length !== Object.keys(obj2).length) {
+    areEqual = false;
+} else {
+     for (var key in obj1) {
+        if (obj1.hasOwnProperty(key)) {
+            if (obj1[key] !== obj2[key]) {
+                areEqual = false;
+                break;
+            }
+        }
+    }
+}
+if (areEqual) {
+    console.log("The objects are equal.");
+} else {
+    console.log("The objects are not equal.");
+}
+
+    </script>
+</body>
+</html>

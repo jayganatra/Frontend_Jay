@@ -1,0 +1,284 @@
+Q.1 What is JavaScript. How to use it? 
+ ans-A cross-platform, object-oriented programming language used by developers to make web pages interactive. 
+ =>It allows developers to create dynamically updating content, use animations, pop-up menus, clickable buttons, control multimedia, etc.
+=> JavaScript is a Client Side Scripting Language.
+=>JavaScript is highly useful in many fields like Web development, Desktop Application, Mobile Application, Game Development etc.
+---------------------------------------------------
+Q.2 How many type of Variable in JavaScript?
+ans-There are two types of variables in JavaScript : 
+   1 =>Using var :-
+        -> It is a global declaration of variable.
+        -> We can use it anywhere in the program.
+        -> We can change the value of variable at run time.
+        -> It's Mutable.
+   2 =>Using let:-
+        -> It is a local declaration of variable.
+        -> We can use it anywhere in the block.
+        -> It is Mutable, we can change the value of variable at run time.
+
+    3=>Using const:-
+        -> It is also local declaration of variable.
+        -> We can also use it anywhere in the block of program.
+        -> But we can't change value of variable, It is Unmutable.
+---------------------------------------------------------------
+Q.3 Define a Data Types in js?
+ans-
+   (i). Primitive Data Types:-
+
+    (1)Number:Represents both integer and floating-point numbers.
+           Examples: 42, 3.14
+
+    (2)String:Represents sequences of characters, used for text.
+              Enclosed in single quotes, double quotes, or backticks.
+               Examples: 'Hello', "World", `Hello, ${name}`
+
+    (3)Boolean: Represents logical values, either true or false.
+                Examples: true, false
+    
+    (4)Undefined:Represents a variable that has been declared but not assigned a value.
+                 Example: let x; // x is undefined
+
+    (5)Null:Represents the intentional absence of any object value.
+            Example: let y = null; // y is explicitly set to null
+
+(ii) Non-Primitive Data Type :
+                    => Non-Primitive data type contains object.
+                    => Object is used to store multiple values of different type.
+                    Example:-let person = {
+                                            name: 'John',
+                                            age: 30,
+                                          };
+----------------------------------------------------------------------------------
+Q-4 What the deference between undefined and undeclare in JavaScript?
+ans-
+
+=>Undefined :-A variable is considered undefined when it has been declared but has not been assigned a value.
+               Example:-undefined
+               
+                         let a;
+                         console.log(a); 
+
+=>Undeclared :-A variable is considered undeclared when it has not been declared in the current scope using var, let, or const.
+                Example:-Undeclared
+               console.log(b); 
+----------------------------------------------------------------------------------------
+Q-5 What is Condition Statement?
+ans-
+ 1. if Statement :-
+
+ The if statement evaluates a condition. If the condition is true, the code block inside the if statement is executed.
+ex- 
+     let age = 18;
+     if (age >= 18) {
+          console.log("You are an adult.");
+          }
+2.if...else Statement :-
+
+The if...else statement provides an alternative block of code to execute if the condition is false.
+ex-
+     let age = 16;
+     if (age >= 18) {
+     console.log("You are an adult.");
+     } else {
+     console.log("You are a minor.");
+     }
+3.if...else if...else Statement :-
+
+This statement is used to test multiple conditions. It can have multiple else if clauses to check additional conditions if the initial if condition is false.
+ex-
+          let score = 85;
+
+          if (score >= 90) {
+          console.log("Grade: A");
+          } else if (score >= 80) {
+          console.log("Grade: B");
+          } else if (score >= 70) {
+          console.log("Grade: C");
+          } else {
+          console.log("Grade: F");
+          }
+4.Nested If :
+
+     ex-if(condition) {
+     if(condition) {
+          // code...
+     }
+     }
+     else {
+     // code...
+     }
+--------------------------------------------------------------------------------------------------------
+Q-6 What is the result of the expression (5 > 3 && 2 < 4)? 
+ans-5 > 3 evaluates to true because 5 is indeed greater than 3.
+   2 < 4 evaluates to true because 2 is less than 4.
+-------------------------------------------------------------------------------------------------------
+Q.7 What is the result of the expression (true && 1 && "hello")?
+ ans-
+ true && 1 && "hello":
+     Both true and 1 are truthy values. The && operator returns the second operand, which is 1.
+-------------------------------------------------------------------------------------------------
+Q.8 What is the result of the expression true && false || false && true
+ANS-The result of the expression true && false || false && true is false.3
+     let result = true && false || false && true;
+     console.log(result); // Output: false
+-------------------------------------------------------------------------------------------------------
+Q.9 What is a Loop and Switch Case in JavaScript define that ?
+ANS- Loop : Loop is defined as execute some part of code again and again until condition of loop return false.
+     
+     There are mainly 3 loops :
+     
+     (1)for Loop:Executes a block of code a specified number of times.
+     Example:
+               for () {
+               // Code to be executed
+               }
+     (2)while Loop:Executes a block of code as long as the specified condition is true.
+     Example:
+          while (condition) {
+               // Code to be executed
+          }
+     (3)do...while Loop:Executes a block of code once, and then repeats the execution as long as the specified condition is true.
+     Example:
+          do {
+               // Code to be executed
+          }while (condition);
+     (4)Switch Case :
+          Switch case is used instead of if else if ladder.
+         It's execute each case, if any case returns true than swtich will be break, otherwise execute default block code.
+         
+         Example:-
+
+         switch (expression) {
+          case value1:
+          // Code to be executed if expression equals value1
+          break;
+          case value2:
+          // Code to be executed if expression equals value2
+          break;
+          // Add more cases as needed
+          default:
+          // Code to be executed if no cases match
+          }
+-------------------------------------------------------------------------------------------------------------------
+Q-10 What is the use of is Nan function?
+ans-The isNaN() function in JavaScript is used to determine whether a value is Not-a-Number. 
+     It is a global function that checks if the value passed to it is not a valid number.
+     value: The value you want to test.
+     Returns true if the value is NaN (Not-a-Number).
+     isNaN(value): Checks if the value is NaN after type coercion.
+     ex-
+     isNaN(value)
+--------------------------------------------------------------------------------------------------------------------
+Q-11 What is the difference between && and || in JavaScript?
+ans-
+ && operator : It's used with conditional statement and loops.
+               It's used with multiple conditions.
+                If both conditions are true then it'll returns TRUE.
+
+• || operator : It's also used with conditional statement and loops.
+                It's used with multiple conditions.
+                If any one condition becomes true then it'll returns TRUE.
+-------------------------------------------------------------------------------------------------------------------
+Q-12 What is the use of Void (0)? 
+ans-void(0) is a construct used to evaluate an expression and then return undefined.
+     It is used when we have to set anything undefined or return undfined.
+-------------------------------------------------------------------------------------------------------------------
+Q-13 What are the looping structures in JavaScript? Any one Example?
+ans- JavaScript execute some part of code again and again until condition of loop return false.
+the main looping structures in JavaScript are:
+     1)for loop:-
+               let numbers = [1, 2, 3, 4, 5];
+
+               for (let i = 0; i < numbers.length; i++) {
+               console.log(numbers[i]);
+               }
+
+     2)while loop:-
+                         let i = 1;
+                         do {
+                         console.log(i);
+                         i++;
+                         } while (i <= 5);
+
+     3)do...while loop:-
+                    let i = 1;
+                    while (i <= 5) {
+                    console.log(i);
+                    i++;
+                    }
+----------------------------------------------------------------------------------------------------------------------
+Q-14 What is JavaScript?
+Ans-JavaScript is a high-level, versatile programming language primarily used to create dynamic and interactive content on websites.
+->It is an essential technology for web development alongside HTML (HyperText Markup Language) and CSS (Cascading Style Sheets).
+-----------------------------------------------------------------------------------------------------------------------
+Q15-What is the use of isNaN function?
+Ans-The isNaN() function in JavaScript is used to determine whether a value is NaN (Not-a-Number). It helps to identify if a value is not a valid number.
+Syntax
+==>isNaN(value)
+-------------------------------------------------------------------------------------------------------------------------
+Q16-What is negative Infinity?
+=> It is a special value that behaves according to the rules of mathematical infinity, but in the negative direction.
+
+----------------------------------------------------------------------------------------------------------------------
+Q17-Which company developed JavaScript?
+=> JavaScript was developed by Netscape Communications.
+------------------------------------------------------------------------------------------------------------------------
+Q18-What is === operator?
+ans-This means that both the value and the type of the two operands must be the same for the comparison to return true.
+ex-a = 10;
+b = "10";
+
+if(a === b)  // It returns false
+------------------------------------------------------------------------------------------------------------------------------
+Q19-How can the style/class of an element be changed?
+Ans- we can change the style or class of an HTML element using various methods.
+<script>
+        function toggleClass() {
+            var element = document.getElementById('myElement');
+            element.classList.toggle('highlight'); // Toggle the 'highlight' class
+        }
+    </script>
+------------------------------------------------------------------------------------------------------------------------------
+Q20-How can you convert the string of any base to an integer in JavaScript?
+ans-
+ Using Number function :-
+               let str = "50";
+               let num = Number(str)
+Using parseInt() :
+               let str = "60"
+               let num = parseInt(str)
+ Using Unary Plus (+) :
+
+               let str = "10";
+               let num = +str;
+--------------------------------------------------------------------------------------------------------------------------
+Q21-What is the function of the delete operator?
+ans-The delete operator in JavaScript is used to remove properties from objects. It can also be used to delete array elements, but this is generally not recommended for arrays as it leaves holes in the array.
+delete object.property;
+delete object['property'];
+delete array[index];
+------------------------------------------------------------------------------------------------------------------------------
+Q22-What are all the types of Pop up boxes available in JavaScript?
+ans-
+(1)alert()
+The alert() method displays a simple message in a dialog box with an "OK" button.
+alert(message);
+(2)onfirm()
+The confirm() method displays a dialog box with a message and two buttons: "OK" and "Cancel". 
+var result = confirm(message);
+(3)prompt()
+The prompt() method displays a dialog box that prompts the user to enter some input.
+var userInput = prompt(message, defaultInput);
+--------------------------------------------------------------------------------------------------------------------------
+Q24-How can a page be forced to load another page in JavaScript?
+ans- We can use window.location.href property to redirect another page.
+ex-
+window.location.href = "URL";
+-----------------------------------------------------------------------------------------------------------------------
+Q25-What are the disadvantages of using innerHTML in JavaScript?
+ans-
+innerHTML is very slow.
+Loss of Event Listeners.
+Appending to innerHTML is not supported.
+Cyber security concerns.
+Performance Issues.

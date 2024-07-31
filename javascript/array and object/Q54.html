@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation 1</title>
+</head>
+
+<body>
+   First Name:<input type="text" id="fname" placeholder="Enter First Name"><br><br><br>
+   Last Name:<input type="text" id="lname" placeholder="Enter Last Name"><br><br><br>
+   E-mail:<input type="email" id="email" placeholder="Enter Email Address"><br><br><br>
+    <button>Submit</button><br><br>
+    <span></span>
+
+    <script>
+        function validation() {
+            let btn = document.querySelector("button");
+
+            btn.addEventListener("click", () => {
+                let fname = document.querySelector("#fname").value;
+                let lname = document.querySelector("#lname").value;
+                let email = document.querySelector("#email").value;
+                let span = document.querySelector("span");
+                span.style.color = "red";
+                span.style.fontWeight = 'bold'
+                if (fname == "" && lname == "" && email == "") {
+                    span.innerHTML = "*Fill all the fields."
+                }
+            })
+        }
+
+        validation()
+    </script>
+</body>
+
+</html>

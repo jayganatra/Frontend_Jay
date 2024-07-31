@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Toggle Example</title>
+    <style>
+        .password-container {
+            position: relative;
+            display: inline-block;
+        }
+        .password-input {
+            padding-right: 120px; 
+        }
+        .button-visibility {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            border: none;
+            background: transparent;
+            font-size: 14px;
+            color: blue; 
+        }
+    </style>
+</head>
+<body>
+    <div class="password-container">
+        <input type="password" id="passwordField" class="password-input" placeholder="Enter your password">
+        <button id="buttonVisibility" class="button-visibility">Show password</button>
+    </div>
+
+    <script>
+        const passwordField = document.getElementById('passwordField');
+        const buttonVisibility = document.getElementById('buttonVisibility');
+        buttonVisibility.addEventListener('click', function() {
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                buttonVisibility.textContent = 'Hide password';
+            } else {
+                passwordField.type = 'password';
+                buttonVisibility.textContent = 'Show password';
+            }
+        });
+    </script>
+</body>
+</html>

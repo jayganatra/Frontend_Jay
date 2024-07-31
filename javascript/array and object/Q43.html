@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            var data = [
+            { name: "jay", age: 21, city: "delhi" },
+            { name: "vijay", age: 22, city: "goa" },
+            { name: "DK", age: 20, city: "mumbai" }
+            ];
+            var headers = "";
+            for (var key in data[0]) {
+            if (headers !== "") {
+                headers += ",";
+            }
+            headers += key;
+            }
+            var csv = headers + "\n";
+            for (var i = 0; i < data.length; i++) {
+            var row = "";
+            for (var key in data[i]) {
+                if (row !== "") {
+                    row += ",";
+                }
+                row += data[i][key];
+            }
+            csv += row + "\n";
+            }
+            console.log(csv);
+
+    </script>
+</body>
+</html>

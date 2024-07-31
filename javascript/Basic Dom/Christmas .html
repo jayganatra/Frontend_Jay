@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    const today = new Date();
+    const year = today.getFullYear();
+    
+    let christmasThisYear = new Date(year, 11, 25); 
+
+if (today > christmasThisYear) {
+    christmasThisYear.setFullYear(year + 1);
+}
+    const timeDifference = christmasThisYear - today;
+    const daysLeft = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+    console.log(`There are ${daysLeft} days left until the next Christmas.`);
+</script>
+</body>
+</html>

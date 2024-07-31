@@ -1,0 +1,19 @@
+Q.47 What is the drawback of declaring methods directly in JavaScript objects? 
+ans-The main drawback of declaring function directly in javascript object is you can't access function directly by calling it.
+    if you have to use function then you must have to call that function by object.
+<example->
+    var obj1 = {
+        value: 10,
+        increment: function() {
+            this.value++;
+        }
+    };
+    
+    var obj2 = {
+        value: 20,
+        increment: function() {
+            this.value++;
+        }
+    };
+    
+</example->
