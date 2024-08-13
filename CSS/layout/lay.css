@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Layout {
+    height: auto;
+    width: 100%;
+    background-color:white;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 10fr));
+
+}
+
+
+
+.boxes {
+    height: 300px;
+    width: 400PX;
+    position: relative;
+}
+
+h3 {
+    height: 150px;
+    width: auto;
+    background-color: rgb(26, 23, 23);
+    padding-top: 70px;
+    text-align: center;
+    color: white;
+}
+
+
+
+
+p {
+    padding-top: 20px;
+}
+
+.btn1 {
+
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px;
+    color: black;
+    position: absolute;
+    bottom: 20px;
+
+}
+
+.btn2 {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px;
+    right: 285px;
+    color: black;
+    position: absolute;
+    bottom: 20px;
+}
+
+.btn1:hover {
+    /* background-color: aqua; */
+    color: white;
+}
+
+
+
+h5 {
+    padding-left: 290px;
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+h5:hover {
+    cursor: pointer;
+}
